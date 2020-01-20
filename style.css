@@ -1,7 +1,17 @@
+#container {
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+.gridRow{
+  height: 25px;
+}
+
 .cell {
-    border: 1px solid gray;
-    min-width: 20px;
-    min-height: 20px;
+    border: .1px solid gray;
+    min-width: 25px;
+    min-height: 25px;
     display: inline-block;
-    margin-right: 2px;
+    
   }

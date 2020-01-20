@@ -6,8 +6,7 @@ const button= document.getElementById("reset");
 
 //reset and resize button
 button.addEventListener("click", clearAndResize);
-   
-   
+
 grid();
 //creates a default grid sized 16x16
 function grid() {
@@ -37,14 +36,32 @@ function newColumn(cellNum) {
     };
 };
 
+//hover-color in cell
+container.addEventListener("mouseover", fillCell);
+//cells.addEventListener("click", stopFillCell);
+//container.addEventListener("click", stopFill);
+
+//fill Function
+function fillCell(e) {
+    if(e.target.className=== "cell") {
+        e.target.style.background= "black";
+    }
+}
+
+//stopFill function
+//function stopFill(e) {}
+
+//resets entire grid and resizes
 function clearAndResize() {
     const input= prompt("Enter a new grid size, up to 100!");
     if(input< 1 || input>100) {
         return;    
     }else{ 
-        gridRow.parentNode.removeChild(gridRow);
+        while(container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
     }
     newRow(input);
-    newColumn(input);S
+    newColumn(input);
 };
 
