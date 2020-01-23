@@ -1,17 +1,27 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
 #container {
-  position: absolute;
-  width: auto;
-  height: auto;
+  border: 1px solid;
+  width: 900px;
+  height: 900px;
+  margin: 20px auto;
+  display: block;
+  padding: 0;
+}
+
+#reset {
+  position: center;
 }
 
 .gridRow{
-  height: 25px;
+  display: flex;
 }
 
 .cell {
-    border: .1px solid gray;
-    min-width: 25px;
-    min-height: 25px;
-    display: inline-block;
-    
-  }
+  border: .1px solid gray;
+  display: inline-block;
+}
