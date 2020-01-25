@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   text-align: center;
+  background-color: #720000
 }
 
 #container {
@@ -15,6 +16,7 @@ body {
 
 #reset {
   position: center;
+  margin-top: 15px;
 }
 
 .gridRow{
@@ -22,6 +24,10 @@ body {
 }
 
 .cell {
-  border: .1px solid gray;
+  
   display: inline-block;
+}
+
+#colorChange{
+  margin-right: 39%;
 }
